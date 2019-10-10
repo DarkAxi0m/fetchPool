@@ -25,7 +25,7 @@ export default class FetchPool {
   private pool = genericPool.createPool<NumberClient>(this.factory, this.opts);
 
   public fetch(url: UrlCall, init?: RequestInit) {
-    return new Promise((resolve,reject)=>{
+    return new Promise((resolve, reject) => {
       return this.pool.acquire().then((c: NumberClient) => {
         return fetch(url(c.number), init)
           .catch(err => {
@@ -38,6 +38,5 @@ export default class FetchPool {
           });
       });
     });
-  
   }
 }
