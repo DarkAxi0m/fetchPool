@@ -1,6 +1,6 @@
 {
   "name": "fetchpool",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Very Simple Process to Pool Fetch requests from a pool of URLS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
