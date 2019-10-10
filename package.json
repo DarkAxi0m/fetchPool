@@ -1,7 +1,7 @@
 {
   "name": "fetchpool",
-  "version": "0.0.3",
-  "description": "Very Simple Process to Pool Fetch requests from a pool of URLS",
+  "version": "0.0.2",
+  "description": "Very Simple Class to Pool Fetch requests from a pool of URLS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -15,7 +15,7 @@
     "postversion": "git push && git push --tags"
   },
   "author": "Chris Chase <npm@sirmonkeys.com>",
-  "license": "ISC",
+  "license": "GNU GPLv3",
   "dependencies": {
     "@types/generic-pool": "^3.1.9",
     "generic-pool": "^3.7.1"
