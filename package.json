@@ -1,0 +1,32 @@
+{
+  "name": "fetchpool",
+  "version": "0.0.1",
+  "description": "Very Simple Process to Pool Fetch requests from a pool of URLS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "author": "Chris Chase <npm@sirmonkeys.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/generic-pool": "^3.1.9",
+    "generic-pool": "^3.7.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.4"
+  },
+  ":files": ["dist/**/*"],
+  "keywords": ["fetch", "pool"]
+}
