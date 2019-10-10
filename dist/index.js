@@ -24,15 +24,17 @@ var FetchPool = /** @class */ (function () {
     }
     FetchPool.prototype.fetch = function (url, init) {
         var _this = this;
-        return this.pool.acquire().then(function (c) {
-            return fetch(url(c.number), init)
-                .catch(function (err) {
-                _this.pool.release(c);
-                return err;
-            })
-                .then(function (response) {
-                _this.pool.release(c);
-                return response;
+        return new Promise(function (resolve, reject) {
+            return _this.pool.acquire().then(function (c) {
+                return fetch(url(c.number), init)
+                    .catch(function (err) {
+                    _this.pool.release(c);
+                    return reject(err);
+                })
+                    .then(function (response) {
+                    _this.pool.release(c);
+                    return resolve(response);
+                });
             });
         });
     };

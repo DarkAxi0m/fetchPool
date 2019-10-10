@@ -4,6 +4,6 @@ export default class FetchPool {
     private count;
     private factory;
     private pool;
-    fetch(url: UrlCall, init?: RequestInit): PromiseLike<Promise<any>>;
+    fetch(url: UrlCall, init?: RequestInit): Promise<unknown>;
 }
 export {};
