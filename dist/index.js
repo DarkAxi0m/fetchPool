@@ -38,5 +38,5 @@ var FetchPool = /** @class */ (function () {
     };
     return FetchPool;
 }());
-exports.FetchPool = FetchPool;
+exports.default = FetchPool;
 //# sourceMappingURL=index.js.map

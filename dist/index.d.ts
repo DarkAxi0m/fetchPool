@@ -1,5 +1,5 @@
 declare type UrlCall = (a: number) => string;
-export declare class FetchPool {
+export default class FetchPool {
     private opts;
     private count;
     private factory;
