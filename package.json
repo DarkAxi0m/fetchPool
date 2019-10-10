@@ -1,6 +1,6 @@
 {
   "name": "fetchpool",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Very Simple Class to Pool Fetch requests from a pool of URLS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,9 @@
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "repository": {"url": "https://github.com/DarkAxi0m/fetchPool"},
+  "repository": {
+    "url": "https://github.com/DarkAxi0m/fetchPool"
+  },
   "author": "Chris Chase <npm@sirmonkeys.com>",
   "license": "GNU GPLv3",
   "dependencies": {
