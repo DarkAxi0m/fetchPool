@@ -3,7 +3,7 @@ import NumberClient from './NumberClient';
 
 type UrlCall = (a: number) => string;
 
-export class FetchPool {
+export default class FetchPool {
   private opts = {
     max: 8,
     min: 2,
