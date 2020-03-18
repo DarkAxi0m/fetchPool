@@ -18,16 +18,17 @@
     "url": "https://github.com/DarkAxi0m/fetchPool"
   },
   "author": "Chris Chase <npm@sirmonkeys.com>",
-  "license": "GNU GPLv3",
+  "license": "GPL-3.0-only",
   "dependencies": {
+    "minimist": ">=1.2.2",
     "@types/generic-pool": "^3.1.9",
     "generic-pool": "^3.7.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2",
-    "tslint": "^5.20.0",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.8.3"
   },
   ":files": [
     "dist/**/*"
